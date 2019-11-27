@@ -170,12 +170,24 @@ img {
 }
 .navigation {
   font-size: 20px;
+  width: 100%;
 }
 .navigation a {
   justify-content: space-evenly;
   text-decoration: none;
   color: black;
-  padding: 20px;
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .navigation a {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
 }
 .footer {
   width: 100%;
@@ -247,18 +259,40 @@ img {
 header {
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-bottom: 2px dashed lightgray;
   padding: 20px;
+  width: 100%;
 }
 header .fun {
   font-family: 'Indie Flower', cursive;
   font-size: 45px;
-  margin-left: 50px;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  header .fun {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .welcome {
   border-bottom: 2px dashed lightgray;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .welcome {
+    width: 100%;
+  }
 }
 .welcome h2 {
   padding-top: 20px;
+  width: 100%;
 }

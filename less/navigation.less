@@ -2,12 +2,19 @@
 
 .navigation {
     font-size: 20px;
-
+    width: 100%;
         a {
             justify-content: space-evenly;
             text-decoration: none;
             color: black;
-            padding: 20px;
+            padding: 15px;
+            // width: 100%;
+            @media @mobile {
+                justify-content: space-evenly;
+                width: 100%;
+            }
         }
-     
+     @media @mobile {
+         width: 100%;
+     }
 }
